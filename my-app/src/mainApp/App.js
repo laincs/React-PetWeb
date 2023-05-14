@@ -1,26 +1,40 @@
 import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './components/navbar';
+import React, { useState } from 'react';
+
+import Contacto from './screens/contacto';
+/* import Inicio from './screens/inicio'; */
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and  AAA  aas da aaWHAT naniasd save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const [view, setView] = useState('inicio');
 
+  const updateView = () => {
+    setView('contacto');
+  }
+
+  return (
+    
+    <div className="App">
+      <Navbar updateView={updateView}/>
+      <header className="App-header">
+      {view === 'inicio' ? (
+        <div>
+          <h1>acá deberia cargar el inicio :v:v:v:v</h1>
+        </div>
+      ) : view === 'contacto' ? (
+        <Contacto />
+      ) : (
+        {/* <About /> */}
+      )}
+
+      </header>
+      
+    </div>
+  );  
+}
 
 export default App;

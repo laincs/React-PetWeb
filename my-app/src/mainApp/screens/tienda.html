@@ -1,0 +1,90 @@
+<!-- BOOTSTRAP STUFF -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- REF -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/leftBar.css">
+<link rel="stylesheet" href="css/upBar.css">
+<link rel="stylesheet" href="css/background.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/specific/contacto.css">
+
+<!-- https://lospec.com/palette-list/dynamite PALLETTE COLOR -->
+
+<meta charset="utf-8">
+<!DOCTYPE html>
+<title>Huellitas Felices | Tienda accesorio mascotas</title>
+<html lang="es">
+
+<head>
+    <script>
+        $(function () {
+            $("#sideBar").load("./reference/leftMenu.html");
+            $("#upBar").load("./reference/upMenu.html");
+            $("#footer").load("./reference/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper" style="background-color: #a35776;">
+        <aside class="col-3">
+            <div class="leftMenuBar">
+                <div id="sideBar"></div>
+            </div>
+        </aside>
+
+        <div class="row col-xs-12 primary-content">
+            <div id="upBar"></div>
+            <div class="row col-xs-12 primary-content">
+                <div id="upBar"></div>
+                <div class="col-xs-12">
+                    <div class="row">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="producto">
+                                <img src="./images/tienda/1.jpg" alt="Nombre del producto">
+                                <h2>Nombre del producto</h2>
+                                <p>Descripción del producto.</p>
+                                <p class="precio">$100.00</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="producto">
+                                <img src="./images/tienda/2.jpg" alt="Nombre del producto">
+                                <h2>Nombre del producto</h2>
+                                <p>Descripción del producto.</p>
+                                <p class="precio">$200.00</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="producto">
+                                <img src="./images/tienda/3.jpg" alt="Nombre del producto">
+                                <h2>Nombre del producto</h2>
+                                <p>Descripción del producto.</p>
+                                <p class="precio">$300.00</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <!-- Agrega aquí más elementos "col-xs-12 col-sm-4" según sea necesario -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- <footer id="footer" class="footer top-bar footer-css"></footer> -->
+</body>
+
+</html>
