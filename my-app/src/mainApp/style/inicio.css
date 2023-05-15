@@ -1,0 +1,40 @@
+.img-carousel {
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+  margin: 0 auto;
+
+  filter: brightness(65%);
+  filter: contrast(70%);
+}
+
+.woman-title {
+  padding-top: 70px;
+  font-family: 'Antipasto Pro Medium';
+  font-size: 34;
+}
+
+.woman-lead{
+  font-family: 'Lato Regular';
+}
+
+.woman-text{
+  color: white;
+  vertical-align: middle;
+	text-align: center;
+}
+
+.mainImage {
+  height: 400px !important;
+	width: 100% !important;
+	object-fit: cover;
+	left: 0;
+	filter: grayscale(var(--value, 56%));
+}
+
+.woman-container {
+  overflow-x: hidden;
+  background-color: #a35776;
+}

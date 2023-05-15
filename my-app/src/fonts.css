@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Antipasto Pro Light';
+    src: url('../public/fonts/AntipastoPro-Light_trial.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Antipasto Pro Medium';
+    src: url('../public/fonts/AntipastoPro-Medium_trial.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lato Bold';
+    font-weight: bold;
+    src: url('../public/fonts/Lato-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lato Regular';
+    font-weight: normal;
+    src: url('../public/fonts/Lato-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lato Thin';
+    font-weight: 100;
+    src: url('../public/fonts/Lato-Thin.ttf') format('truetype');
+  }
+  

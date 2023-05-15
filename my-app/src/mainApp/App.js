@@ -1,37 +1,37 @@
-import logo from './logo.svg';
 
-import './App.css';
+import '../fonts.css';
+
 import Navbar from './components/navbar';
 import React, { useState } from 'react';
 
 import Contacto from './screens/contacto';
-/* import Inicio from './screens/inicio'; */
+import Inicio from './screens/inicio';
 
 
 
 function App() {
   const [view, setView] = useState('inicio');
 
-  const updateView = () => {
-    setView('contacto');
+  const updateView = (view) => {
+    setView(view);
   }
 
   return (
     
     <div className="App">
       <Navbar updateView={updateView}/>
-      <header className="App-header">
+
+      <body>
       {view === 'inicio' ? (
-        <div>
-          <h1>acá deberia cargar el inicio :v:v:v:v</h1>
-        </div>
+        <Inicio />
+
       ) : view === 'contacto' ? (
         <Contacto />
       ) : (
         {/* <About /> */}
       )}
 
-      </header>
+      </body>
       
     </div>
   );  

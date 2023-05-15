@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #f37966;
+    justify-content: space-between;
+    padding: 10px 25px 15px ;
+}
+
+.logo-image {
+    height: 100px;
+}
+
+.button-navbar{
+    font-family: 'Antipasto Pro Medium';
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+}

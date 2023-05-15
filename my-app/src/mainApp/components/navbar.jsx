@@ -1,23 +1,21 @@
-import "./navbar.css";
+import "../style/navbar.css";
 
 import { Button } from 'react-bootstrap';
 
 function Navbar({ updateView }){
 
-    const handleClick = () => {
-        updateView();
+    const handleClick = (button) => {
+        updateView(button);
     };
 
     return(
-        <>
-            <nav>
-                {/* <h1>This is a navbar</h1> */}
-
-                <div>
-                    <Button variant="primary" onClick={handleClick}>Formulario</Button>
-                </div>
-            </nav>
-        </>
+        <nav>
+            <Button variant="link" className="button-navbar" onClick={() => handleClick('donaciones')}>Donaciones</Button>
+            <Button variant="link" className="button-navbar" onClick={() => handleClick('contacto')}>Contacto</Button>
+            <img className="logo-image" src={process.env.PUBLIC_URL + '/mainLogo.png'} alt="Logo" onClick={() => handleClick('inicio')}/>
+            <Button variant="link" className="button-navbar" onClick={() => handleClick('donaciones2')}>Donaciones</Button>
+            <Button variant="link" className="button-navbar" onClick={() => handleClick('formulario')}>Formulario</Button>
+        </nav>
     )
 }
 
