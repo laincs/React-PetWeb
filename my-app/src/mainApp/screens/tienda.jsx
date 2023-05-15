@@ -87,10 +87,14 @@ function Tienda() {
             src={selectedProduct?.imageUrl}
             alt="Imagen Popup"
           />
-          <p>{selectedProduct?.price}</p>
-          <p>{selectedProduct?.description}</p>
+          <p className="p1col">{selectedProduct?.price}</p>
+          <p className="p1col">{selectedProduct?.description}</p>
         </Modal.Body>
         <Modal.Footer>
+        <Button>
+            Agregar
+          </Button>
+
           <Button variant="secondary" onClick={handleCloseModal}>
             Cerrar
           </Button>
