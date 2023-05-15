@@ -1,3 +1,21 @@
-.main-contacto{
+.main-contacto {
     background-color: #a35776;
+    overflow-x: hidden;
+}
+
+.contacto-title {
+    padding-top: 70px;
+    font-family: 'Antipasto Pro Medium';
+    font-size: 34;
+}
+
+.contacto-label {
+    font-family: 'Lato Regular';
+    font-size: 34;
+}
+
+.contacto-text {
+    color: white;
+    vertical-align: middle;
+    text-align: center;
 }
