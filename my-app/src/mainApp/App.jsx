@@ -11,7 +11,6 @@ import Nosotros from './screens/Nosotros';
 import Tienda from './screens/tienda';
 
 
-
 function App() {
   const [view, setView] = useState('inicio');
 
