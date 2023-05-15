@@ -1,25 +1,46 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-function Donaciones() {
+import "../style/donaciones.css";
 
+function Donaciones() {
   const handleImageClick = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
+  const organizations = [
+    {
+      imageUrl: "./images/donaciones/chile_mestizo.png",
+      linkUrl: "http://chilemestizo.cl/",
+      name: "Chile Mestizo",
+    },
+    {
+      imageUrl: "./images/donaciones/fundacion_adopta.png",
+      linkUrl: "https://www.fundacionadopta.cl/Index/",
+      name: "Fundación Adopta",
+    },
+    {
+      imageUrl: "./images/donaciones/CALLEJERITOS-DE-LA-VEGA.png",
+      linkUrl: "https://www.fundacioncallejeritosdelavega.cl/",
+      name: "Fundación Callejeritos de la Vega",
+    },
+    {
+      imageUrl: "./images/donaciones/SIETE-VIDAS.png",
+      linkUrl: "https://www.sietevidas.org/",
+      name: "Corporación Siete Vidas",
+    },
+    {
+      imageUrl: "./images/donaciones/FELINNOS.png",
+      linkUrl: "https://tnrchile.cl/",
+      name: "Fundación Felinnos",
+    },
+  ];
+
   return (
-    <div>
+    <div className="color_fondo">
       <Container>
         <Row>
-          <Col xs={3}>
-            <div className="leftMenuBar">
-              {/* Código del menú lateral */}
-            </div>
-          </Col>
-          <Col xs={9}>
-            <div>
-              {/* Código de la barra superior */}
-            </div>
+          <Col xs={12}>
             <br />
             <h1 className="nosotros-title">Donaciones</h1>
             <p className="nosotros-text">
@@ -29,25 +50,18 @@ function Donaciones() {
             <br />
             <h1 className="nosotros-title2">Organizaciones</h1>
 
-            <Image
-              src="./images/donaciones/chile_mestizo.png"
-              alt="Imagen Clickeable"
-              onClick={() =>handleImageClick("http://chilemestizo.cl/")}
-            />
-
-            <p className="nosotros-text">Fundación Animalia</p>
-            <br />
-            <p className="nosotros-text">- Fundación Julieta</p>
-            <br />
-            <p className="nosotros-text">- Fundación Callejeros Buscan Hogar</p>
-            <br />
-            <p className="nosotros-text">- Garras y Patas</p>
-            <br />
-            <p className="nosotros-text">- Perritos de Rinconada</p>
-            <br />
-            <p className="nosotros-text">- Fundación Galgos Chile</p>
-            <br />
-            <p className="nosotros-text">- Fundación Chile Mestizo</p>
+            <Row>
+              {organizations.map((org, index) => (
+                <Col key={index} xs={4}>
+                  <Image className = "Imagedon"
+                    src={org.imageUrl}
+                    alt="Imagen Clickeable"
+                    onClick={() => handleImageClick(org.linkUrl)}
+                  />
+                  <p className="nosotros-text">{org.name}</p>
+                </Col>
+              ))}
+            </Row>
           </Col>
         </Row>
       </Container>
