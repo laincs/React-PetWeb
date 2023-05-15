@@ -13,8 +13,8 @@ function Navbar({ updateView }){
             <Button variant="link" className="button-navbar" onClick={() => handleClick('donaciones')}>Donaciones</Button>
             <Button variant="link" className="button-navbar" onClick={() => handleClick('contacto')}>Contacto</Button>
             <img className="logo-image" src={process.env.PUBLIC_URL + '/mainLogo.png'} alt="Logo" onClick={() => handleClick('inicio')}/>
-            <Button variant="link" className="button-navbar" onClick={() => handleClick('donaciones2')}>Donaciones</Button>
-            <Button variant="link" className="button-navbar" onClick={() => handleClick('formulario')}>Formulario</Button>
+            <Button variant="link" className="button-navbar" onClick={() => handleClick('tienda')}>Tienda</Button>
+            <Button variant="link" className="button-navbar" onClick={() => handleClick('nosotros')}>Nosotros</Button>
         </nav>
     )
 }

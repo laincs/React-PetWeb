@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 
 import Contacto from './screens/contacto';
 import Inicio from './screens/inicio';
+import Donaciones from './screens/Donaciones';
 
 
 
@@ -27,6 +28,10 @@ function App() {
 
       ) : view === 'contacto' ? (
         <Contacto />
+
+      ) : view === 'donaciones' ? (
+        <Donaciones />
+
       ) : (
         {/* <About /> */}
       )}
