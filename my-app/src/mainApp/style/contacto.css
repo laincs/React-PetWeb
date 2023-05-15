@@ -4,7 +4,7 @@
 }
 
 .contacto-title {
-    padding-top: 70px;
+    padding-top: 30px;
     font-family: 'Antipasto Pro Medium';
     font-size: 34;
 }
@@ -12,6 +12,7 @@
 .contacto-label {
     font-family: 'Lato Regular';
     font-size: 34;
+    padding-top: 10px;
 }
 
 .contacto-text {
