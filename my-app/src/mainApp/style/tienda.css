@@ -1,0 +1,30 @@
+.Imagedon {
+    height: 200px !important;
+      object-fit: cover;
+      left: 0;
+  }
+
+.Imagedonpop {
+    height: 300px !important;
+      object-fit: cover;
+      left: 0;
+  }
+
+.color_fondo {
+    background-color: #a35776;
+  }
+
+p {
+    color: white;
+    font-family: 'Lato Regular'
+}
+
+h1 {
+    color: white;
+    font-family: 'Antipasto Pro Medium';
+}
+
+.text {
+    color: white;
+    font-family: 'Lato Regular';   
+} 

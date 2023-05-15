@@ -8,6 +8,7 @@ import Contacto from './screens/contacto';
 import Inicio from './screens/inicio';
 import Donaciones from './screens/Donaciones';
 import Nosotros from './screens/Nosotros';
+import Tienda from './screens/tienda';
 
 
 
@@ -35,6 +36,9 @@ function App() {
 
       ) : view === 'nosotros' ? (
         <Nosotros />
+
+      ) : view === 'tienda' ? (
+        <Tienda />
 
       ) : (
         {/* <About /> */}
